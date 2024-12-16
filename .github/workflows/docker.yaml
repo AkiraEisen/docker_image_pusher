@@ -21,8 +21,11 @@ jobs:
     - name: Before freeing up disk space
       run: |
         echo "Before freeing up disk space"
-        echo $ALIYUN_REGISTRY_USER
-        echo $ALIYUN_REGISTRY_PASSWORD
+        echo ${{ secrets.ALIYUN_REGISTRY_PASSWORD }}
+        echo ${{ secrets.ALIYUN_REGISTRY_USER }}
+        echo ${{ secrets.ALIYUN_NAME_SPACE }}
+        echo ${{ secrets.ALIYUN_REGISTRY }}
+        echo ALIYUN_REGISTRY
         echo $ALIYUN_REGISTRY
         echo "=============================================================================="
         df -hT
