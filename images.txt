@@ -1,5 +1,2 @@
-prom/prometheus:latest
-grafana/grafana:latest
-prom/mysqld-exporter:latest
-vertamedia/clickhouse-exporter:latest
 google/cadvisor:latest
+f1yegor/clickhouse-exporter
